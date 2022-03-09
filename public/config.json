@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                    "emailAddress": "{{Contact.Attribute.Test Custom Activity.TargetNumber}}"
                 }									
 			],
           "outArguments": [],
@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e6f7fdc7-df56-4297-b2fd-6e5a1dc8fd1e",
+      "applicationExtensionKey": "0704fc83-15d2-42f6-966d-d5f309e93880",
       "save": {
         "url": "https://custom-test-sms.herokuapp.com/journeybuilder/save",
           "verb": "POST",
@@ -71,15 +71,15 @@
            "execute": {
                "inArguments": [
                    {
-                       "phoneNumber": {
+                       "TargetNumber": {
                            "dataType": "Phone",
                            "isNullable": false,
                            "direction": "in"   
                        }
                    },
                    {
-                       "emailAddress": {
-                           "dataType": "Email",
+                       "Protocol Id": {
+                           "dataType": "String",
                            "isNullable": false,
                            "direction": "in"
                        }
