@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.Test Custom Activity.TargetNumber}}"
+                    "TargetNumber": "{{Contact.Attribute.Test Custom Activity.TargetNumber}}"
                 }									
 			],
           "outArguments": [],
